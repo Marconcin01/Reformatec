@@ -116,13 +116,13 @@
         <span class="hidden lg:inline">Painel</span>
       </button>
 
-      <a href="https://wa.me/5511940068958?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20solicitar%20um%20or%C3%A7amento."
-         target="_blank" rel="noopener"
-         class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-ink-950 text-sm font-semibold px-4 py-2.5 rounded-lg transition-all shadow-glow-emerald focus-ring">
+      <button
+        id="btn-orcamento-navbar" type="button"
+        class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-ink-950 text-sm font-semibold px-4 py-2.5 rounded-lg transition-all shadow-glow-emerald focus-ring">
         <i class="fa-brands fa-whatsapp text-base"></i>
         <span class="hidden sm:inline">Solicitar Orçamento</span>
         <span class="sm:hidden">Orçamento</span>
-      </a>
+      </button>
     </div>
   </nav>
 </header>
@@ -151,12 +151,12 @@
       </p>
 
       <div class="mt-9 flex flex-wrap items-center gap-4">
-        <a href="https://wa.me/5511940068958?text=Ol%C3%A1%2C%20preciso%20de%20um%20servi%C3%A7o%20e%20quero%20um%20or%C3%A7amento."
-           target="_blank" rel="noopener"
-           class="inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-ink-950 font-semibold text-base px-7 py-4 rounded-xl transition-all shadow-glow-emerald focus-ring">
+        <button
+          id="btn-orcamento-hero" type="button"
+          class="inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-ink-950 font-semibold text-base px-7 py-4 rounded-xl transition-all shadow-glow-emerald focus-ring">
           <i class="fa-brands fa-whatsapp text-2xl"></i>
-          Chamar no WhatsApp
-        </a>
+          Solicitar Orçamento
+        </button>
         <a href="#servicos" class="inline-flex items-center gap-2 text-zinc-300 hover:text-white text-sm font-medium px-2 py-4 transition-colors focus-ring rounded">
           Ver serviços
           <i class="fa-solid fa-arrow-right text-xs"></i>
@@ -232,6 +232,10 @@
       </div>
       <h3 class="font-display font-semibold text-lg mt-5">Elétrica</h3>
       <p class="mt-2 text-sm text-zinc-400 leading-relaxed">Instalações, quadros de disjuntores, tomadas e reparos com segurança e norma técnica.</p>
+      <button type="button" data-categoria="Elétrica" class="btn-orcamento-card inline-flex items-center gap-1.5 text-xs font-medium text-cyan-300 hover:text-cyan-200 transition-colors mt-4 focus-ring rounded">
+        Solicitar orçamento
+        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+      </button>
     </div>
 
     <div class="group rounded-2xl bg-ink-900/50 card-border p-6 transition-all hover:border-cyan-400/40 hover:shadow-glow-cyan">
@@ -240,6 +244,10 @@
       </div>
       <h3 class="font-display font-semibold text-lg mt-5">Hidráulica</h3>
       <p class="mt-2 text-sm text-zinc-400 leading-relaxed">Vazamentos, entupimentos, troca de registros e instalação de louças e metais.</p>
+      <button type="button" data-categoria="Hidráulica" class="btn-orcamento-card inline-flex items-center gap-1.5 text-xs font-medium text-cyan-300 hover:text-cyan-200 transition-colors mt-4 focus-ring rounded">
+        Solicitar orçamento
+        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+      </button>
     </div>
 
     <div class="group rounded-2xl bg-ink-900/50 card-border p-6 transition-all hover:border-cyan-400/40 hover:shadow-glow-cyan">
@@ -248,6 +256,10 @@
       </div>
       <h3 class="font-display font-semibold text-lg mt-5">Pintura</h3>
       <p class="mt-2 text-sm text-zinc-400 leading-relaxed">Pintura interna, externa e retoques, com preparo de superfície incluso no orçamento.</p>
+      <button type="button" data-categoria="Pintura" class="btn-orcamento-card inline-flex items-center gap-1.5 text-xs font-medium text-cyan-300 hover:text-cyan-200 transition-colors mt-4 focus-ring rounded">
+        Solicitar orçamento
+        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+      </button>
     </div>
 
     <div class="group rounded-2xl bg-ink-900/50 card-border p-6 transition-all hover:border-cyan-400/40 hover:shadow-glow-cyan">
@@ -256,6 +268,10 @@
       </div>
       <h3 class="font-display font-semibold text-lg mt-5">Reparos gerais</h3>
       <p class="mt-2 text-sm text-zinc-400 leading-relaxed">Marcenaria, gesso, portas, fechaduras e aquele conserto que ninguém mais resolveu.</p>
+      <button type="button" data-categoria="Reparos Gerais" class="btn-orcamento-card inline-flex items-center gap-1.5 text-xs font-medium text-cyan-300 hover:text-cyan-200 transition-colors mt-4 focus-ring rounded">
+        Solicitar orçamento
+        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+      </button>
     </div>
 
   </div>
@@ -501,12 +517,12 @@
     <p class="mt-4 text-zinc-400 text-lg max-w-xl mx-auto">
       Mande uma mensagem agora e receba seu orçamento em PDF ainda hoje.
     </p>
-    <a href="https://wa.me/5511940068958?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20or%C3%A7amento%20com%20a%20Reformatec."
-       target="_blank" rel="noopener"
-       class="mt-8 inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-ink-950 font-semibold text-base px-8 py-4 rounded-xl transition-all shadow-glow-emerald focus-ring">
+    <button
+      id="btn-orcamento-cta-final" type="button"
+      class="mt-8 inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-ink-950 font-semibold text-base px-8 py-4 rounded-xl transition-all shadow-glow-emerald focus-ring">
       <i class="fa-brands fa-whatsapp text-2xl"></i>
       Falar com a Reformatec agora
-    </a>
+    </button>
   </div>
 </section>
 
@@ -538,12 +554,12 @@
 
     <div>
       <h4 class="text-zinc-200 font-semibold text-sm mb-4">Atendimento</h4>
-      <a href="https://wa.me/5511940068958?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20solicitar%20um%20or%C3%A7amento."
-         target="_blank" rel="noopener"
-         class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-ink-950 text-sm font-semibold px-4 py-2.5 rounded-lg transition-all shadow-glow-emerald focus-ring">
+      <button
+        id="btn-orcamento-footer" type="button"
+        class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-ink-950 text-sm font-semibold px-4 py-2.5 rounded-lg transition-all shadow-glow-emerald focus-ring">
         <i class="fa-brands fa-whatsapp"></i>
         Solicitar orçamento
-      </a>
+      </button>
     </div>
 
   </div>
@@ -780,6 +796,50 @@
       <i class="fa-solid fa-check text-emerald-400 text-sm"></i>
     </span>
     <span id="toast-mensagem">Mensagem</span>
+  </div>
+</div>
+
+<!-- ============ MODAL: ESCOLHA DO TIPO DE ORÇAMENTO ============ -->
+<div id="modal-orcamento" class="hidden fixed inset-0 z-[95] flex items-center justify-center p-5">
+  <div id="modal-orcamento-backdrop" class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+
+  <div class="relative w-full max-w-lg rounded-2xl bg-ink-900/80 backdrop-blur-xl card-border shadow-2xl shadow-black/60 p-6 sm:p-8">
+    <button
+      id="btn-fechar-modal-orcamento" type="button" aria-label="Fechar"
+      class="absolute top-4 right-4 w-9 h-9 rounded-lg bg-white/[0.03] border border-white/10 hover:border-cyan-400/40 flex items-center justify-center transition-all focus-ring"
+    >
+      <i class="fa-solid fa-xmark text-zinc-300"></i>
+    </button>
+
+    <div class="text-center mb-7">
+      <p class="text-xs font-medium text-cyan-300 mb-2">Solicitar orçamento</p>
+      <h2 class="font-display font-bold text-xl sm:text-2xl">Como você prefere continuar?</h2>
+      <p class="text-zinc-400 text-sm mt-2">Escolha a forma mais rápida para você.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-4">
+      <button
+        id="opcao-orcamento-whatsapp" type="button"
+        class="group text-left rounded-xl bg-white/[0.03] border border-white/10 hover:border-emerald-400/40 p-5 transition-all focus-ring"
+      >
+        <div class="w-11 h-11 rounded-xl bg-emerald-400/10 border border-emerald-400/20 flex items-center justify-center mb-4 group-hover:bg-emerald-400/15 transition-colors">
+          <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+        </div>
+        <h3 class="font-semibold text-sm">Orçamento via WhatsApp</h3>
+        <p class="text-zinc-400 text-xs mt-1.5 leading-relaxed">Fale agora com um atendente e receba atendimento imediato.</p>
+      </button>
+
+      <button
+        id="opcao-orcamento-online" type="button"
+        class="group text-left rounded-xl bg-white/[0.03] border border-white/10 hover:border-cyan-400/40 p-5 transition-all focus-ring"
+      >
+        <div class="w-11 h-11 rounded-xl bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center mb-4 group-hover:bg-cyan-400/15 transition-colors">
+          <i class="fa-solid fa-calculator text-cyan-300 text-lg"></i>
+        </div>
+        <h3 class="font-semibold text-sm">Orçamento Online</h3>
+        <p class="text-zinc-400 text-xs mt-1.5 leading-relaxed">Preencha o formulário e gere seu orçamento em PDF na hora.</p>
+      </button>
+    </div>
   </div>
 </div>
 
@@ -1515,6 +1575,71 @@
       mostrarToast('Dados de teste apagados.');
     });
   }
+
+  // ============ MODAL: ESCOLHA DO TIPO DE ORÇAMENTO ============
+
+  const modalOrcamento = document.getElementById('modal-orcamento');
+  const modalOrcamentoBackdrop = document.getElementById('modal-orcamento-backdrop');
+  const btnFecharModalOrcamento = document.getElementById('btn-fechar-modal-orcamento');
+  const opcaoOrcamentoWhatsapp = document.getElementById('opcao-orcamento-whatsapp');
+  const opcaoOrcamentoOnline = document.getElementById('opcao-orcamento-online');
+
+  // Guarda a categoria do card clicado (se houver), para pré-selecionar no formulário
+  let categoriaPreSelecionada = null;
+
+  function abrirModalOrcamento(categoria) {
+    categoriaPreSelecionada = categoria || null;
+    modalOrcamento.classList.remove('hidden');
+  }
+
+  function fecharModalOrcamento() {
+    modalOrcamento.classList.add('hidden');
+    categoriaPreSelecionada = null;
+  }
+
+  // Todos os botões "Solicitar Orçamento" do site (Navbar, Hero, CTA final, Rodapé) abrem o modal
+  document
+    .querySelectorAll('#btn-orcamento-navbar, #btn-orcamento-hero, #btn-orcamento-cta-final, #btn-orcamento-footer')
+    .forEach((botao) => botao.addEventListener('click', () => abrirModalOrcamento()));
+
+  // Botões "Solicitar orçamento" de cada card de serviço também abrem o modal,
+  // já indicando qual categoria pré-selecionar caso o cliente escolha "Orçamento Online"
+  document.querySelectorAll('.btn-orcamento-card').forEach((botao) => {
+    botao.addEventListener('click', () => abrirModalOrcamento(botao.dataset.categoria));
+  });
+
+  btnFecharModalOrcamento.addEventListener('click', fecharModalOrcamento);
+  modalOrcamentoBackdrop.addEventListener('click', fecharModalOrcamento);
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !modalOrcamento.classList.contains('hidden')) {
+      fecharModalOrcamento();
+    }
+  });
+
+  // Opção 1: abre o WhatsApp diretamente com uma mensagem padrão
+  opcaoOrcamentoWhatsapp.addEventListener('click', () => {
+    fecharModalOrcamento();
+    const mensagem = 'Olá! Gostaria de solicitar um orçamento com a Reformatec.';
+    window.open(`https://wa.me/${NUMERO_WHATSAPP}?text=${encodeURIComponent(mensagem)}`, '_blank');
+  });
+
+  // Opção 2: rola até o formulário e, se veio de um card de serviço, já pré-seleciona a categoria
+  opcaoOrcamentoOnline.addEventListener('click', () => {
+    const categoria = categoriaPreSelecionada;
+    fecharModalOrcamento();
+
+    document.getElementById('sistema').scrollIntoView({ behavior: 'smooth' });
+
+    // Pequeno atraso para deixar o scroll suave iniciar antes de preencher o formulário
+    setTimeout(() => {
+      if (categoria) {
+        selectCategoria.value = categoria;
+        selectCategoria.dispatchEvent(new Event('change'));
+      }
+      inputCliente.focus();
+    }, 500);
+  });
 </script>
 
 </body>
