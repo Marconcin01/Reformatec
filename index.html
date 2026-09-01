@@ -1056,19 +1056,23 @@
 
     const dataFormatada = new Date(`${data}T00:00:00`).toLocaleDateString('pt-BR');
 
+    // Gera o link do Google Calendar ANTES de montar o texto, para poder incluí-lo na mensagem
+    const urlGoogleCalendar = montarLinkGoogleCalendar(numero, data, horario);
+
     // Texto puro: sem emojis, apenas \n para quebra de linha
     const texto =
       `Agendamento Confirmado!\n\n` +
       `Orçamento nº: ${numero}\n` +
       `Data: ${dataFormatada}\n` +
       `Horário: ${horario}\n\n` +
+      `Adicione o evento na sua agenda clicando no link abaixo:\n${urlGoogleCalendar}\n\n` +
       `Aguardamos você!`;
 
     const textoCodificado = encodeURIComponent(texto);
     const urlWhatsapp = `https://wa.me/${NUMERO_WHATSAPP}?text=${textoCodificado}`;
 
-    // Revela o botão secundário de adicionar ao Google Calendar
-    linkGoogleCalendar.href = montarLinkGoogleCalendar(numero, data, horario);
+    // Revela o botão secundário de adicionar ao Google Calendar na própria tela
+    linkGoogleCalendar.href = urlGoogleCalendar;
     linkGoogleCalendar.classList.remove('hidden');
     linkGoogleCalendar.classList.add('flex');
 
