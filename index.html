@@ -102,6 +102,7 @@
 
     <div class="hidden md:flex items-center gap-8 text-sm text-zinc-400">
       <a href="#servicos" class="hover:text-white transition-colors focus-ring rounded">Serviços</a>
+      <a href="#sobre" class="hover:text-white transition-colors focus-ring rounded">Sobre</a>
       <a href="#sistema" class="hover:text-white transition-colors focus-ring rounded">Sistema</a>
       <a href="#contato" class="hover:text-white transition-colors focus-ring rounded">Contato</a>
     </div>
@@ -245,6 +246,75 @@
       </div>
       <h3 class="font-display font-semibold text-lg mt-5">Reparos gerais</h3>
       <p class="mt-2 text-sm text-zinc-400 leading-relaxed">Marcenaria, gesso, portas, fechaduras e aquele conserto que ninguém mais resolveu.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ SOBRE ============ -->
+<section id="sobre" class="relative overflow-hidden bg-ink-950 border-t border-white/5">
+  <div class="glow-orb w-[460px] h-[460px] bg-cyan-500/10 -top-32 right-0"></div>
+
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 md:py-28 grid md:grid-cols-2 gap-16 items-center relative">
+
+    <div>
+      <p class="text-xs font-medium text-cyan-300 mb-3">Sobre a Reformatec</p>
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight leading-tight">
+        Tecnologia a serviço de quem conserta
+      </h2>
+
+      <p class="mt-6 text-zinc-400 text-lg leading-relaxed max-w-md">
+        Nascemos da frustração com orçamentos verbais, prazos incertos e retrabalho. A Reformatec surgiu para trazer ao setor de manutenção residencial e comercial o mesmo padrão de clareza que qualquer serviço digital de ponta oferece.
+      </p>
+      <p class="mt-4 text-zinc-400 text-lg leading-relaxed max-w-md">
+        Nossa missão é simples: descomplicar a manutenção com tecnologia — do primeiro contato pelo WhatsApp ao aceite digital do orçamento, sem burocracia e sem letras miúdas.
+      </p>
+
+      <div class="mt-8 space-y-5">
+        <div class="flex items-start gap-4">
+          <div class="w-9 h-9 rounded-lg bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-eye text-cyan-300 text-sm"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-sm">Transparência total</h3>
+            <p class="text-zinc-400 text-sm mt-0.5">Preços claros, por item, antes de qualquer trabalho começar.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-9 h-9 rounded-lg bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-gauge-high text-cyan-300 text-sm"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-sm">Agilidade de verdade</h3>
+            <p class="text-zinc-400 text-sm mt-0.5">Do pedido ao orçamento aprovado, tudo na mesma conversa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rounded-2xl bg-ink-900/70 backdrop-blur-xl card-border shadow-2xl shadow-black/50 p-8">
+      <div class="space-y-7">
+
+        <div>
+          <p class="font-display font-bold text-4xl grad-text">+1.200</p>
+          <p class="text-zinc-400 text-sm mt-1">Orçamentos digitais gerados</p>
+        </div>
+
+        <div class="h-px bg-white/5"></div>
+
+        <div>
+          <p class="font-display font-bold text-4xl grad-text">100%</p>
+          <p class="text-zinc-400 text-sm mt-1">Dos orçamentos com aceite digital</p>
+        </div>
+
+        <div class="h-px bg-white/5"></div>
+
+        <div>
+          <p class="font-display font-bold text-4xl grad-text">Ágil</p>
+          <p class="text-zinc-400 text-sm mt-1">Atendimento rápido em toda a Grande São Paulo</p>
+        </div>
+
+      </div>
     </div>
 
   </div>
@@ -489,10 +559,34 @@
         Confirmar Agendamento
       </button>
 
+      <a
+        id="link-google-calendar" href="#" target="_blank" rel="noopener"
+        class="hidden w-full items-center justify-center gap-2 border border-white/10 bg-white/[0.03] hover:border-cyan-400/40 text-zinc-200 font-medium py-3 rounded-xl mt-3 transition-all focus-ring"
+      >
+        <i class="fa-regular fa-calendar-plus text-cyan-300"></i>
+        Adicionar ao Google Calendar
+      </a>
+
       <p id="status-agendamento" class="text-xs text-zinc-500 text-center pt-3 hidden"></p>
     </div>
   </div>
 </section>
+
+<!-- ============ WIDGET FLUTUANTE DE WHATSAPP ============ -->
+<div class="fixed bottom-6 right-6 z-40 flex items-center gap-3">
+  <div class="hidden sm:flex items-center bg-ink-900/90 backdrop-blur-xl border border-white/10 text-zinc-200 text-sm px-4 py-2.5 rounded-xl shadow-lg shadow-black/40">
+    Precisa de ajuda?
+  </div>
+
+  <a
+    href="https://wa.me/5511940068958?text=Ol%C3%A1%2C%20estou%20navegando%20no%20site%20e%20preciso%20de%20ajuda."
+    target="_blank" rel="noopener" aria-label="Falar no WhatsApp"
+    class="relative w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 flex items-center justify-center transition-all shadow-glow-emerald focus-ring"
+  >
+    <span class="absolute top-0 right-0 w-3.5 h-3.5 rounded-full bg-emerald-300 border-2 border-ink-950 animate-pulse"></span>
+    <i class="fa-brands fa-whatsapp text-ink-950 text-2xl"></i>
+  </a>
+</div>
 
 <!-- jsPDF via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -895,6 +989,7 @@
   const inputDataAgendamento = document.getElementById('input-data-agendamento');
   const selectHorarioAgendamento = document.getElementById('select-horario-agendamento');
   const btnConfirmarAgendamento = document.getElementById('btn-confirmar-agendamento');
+  const linkGoogleCalendar = document.getElementById('link-google-calendar');
   const statusAgendamento = document.getElementById('status-agendamento');
 
   function mostrarStatusAgendamento(mensagem) {
@@ -909,7 +1004,7 @@
 
     if (!numero) return;
 
-    // Oculta o restante do site (navbar, hero, serviços, sistema, CTA final e rodapé)
+    // Oculta o restante do site (navbar, hero, serviços, sobre, sistema, CTA final e rodapé)
     document
       .querySelectorAll('body > header, body > section:not(#tela-agendamento), body > footer')
       .forEach((el) => el.classList.add('hidden'));
@@ -920,6 +1015,33 @@
 
     // Impede selecionar uma data anterior a hoje
     inputDataAgendamento.min = new Date().toISOString().split('T')[0];
+  }
+
+  // Converte data (YYYY-MM-DD) + horário (HH:MM) para o formato exigido pelo Google Calendar
+  function paraFormatoGoogleCalendar(data, hora) {
+    const dataCompacta = data.replace(/-/g, '');       // YYYYMMDD
+    const horaCompacta = hora.replace(':', '') + '00';  // HHMM00
+    return `${dataCompacta}T${horaCompacta}Z`;
+  }
+
+  // Monta o link do Google Calendar com o evento pré-preenchido
+  function montarLinkGoogleCalendar(numero, data, horario) {
+    const [horaInicio, horaFim] = horario.split(' - ').map((h) => h.trim());
+
+    const dataHoraInicio = paraFormatoGoogleCalendar(data, horaInicio);
+    const dataHoraFim = paraFormatoGoogleCalendar(data, horaFim);
+
+    const textoEvento = `Manutenção Reformatec - Orçamento #${numero}`;
+    const detalhesEvento = 'Serviço agendado via sistema digital Reformatec.';
+
+    const params = new URLSearchParams({
+      action: 'TEMPLATE',
+      text: textoEvento,
+      dates: `${dataHoraInicio}/${dataHoraFim}`,
+      details: detalhesEvento,
+    });
+
+    return `https://calendar.google.com/calendar/render?${params.toString()}`;
   }
 
   btnConfirmarAgendamento.addEventListener('click', () => {
@@ -944,6 +1066,11 @@
 
     const textoCodificado = encodeURIComponent(texto);
     const urlWhatsapp = `https://wa.me/${NUMERO_WHATSAPP}?text=${textoCodificado}`;
+
+    // Revela o botão secundário de adicionar ao Google Calendar
+    linkGoogleCalendar.href = montarLinkGoogleCalendar(numero, data, horario);
+    linkGoogleCalendar.classList.remove('hidden');
+    linkGoogleCalendar.classList.add('flex');
 
     mostrarStatusAgendamento('Abrindo o WhatsApp para confirmar o agendamento...');
     window.open(urlWhatsapp, '_blank');
